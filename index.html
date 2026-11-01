@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Bel Art Belleza, salón de belleza en Dosquebradas: cabello, color, uñas, cejas, pestañas, depilación y spa. Reserva tu cita en línea o por WhatsApp.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0709">
+<title>Bel Art Belleza · Salón de belleza en Dosquebradas</title>
+<meta property="og:title" content="Bel Art Belleza · Tu belleza, nuestra forma de arte">
+<meta property="og:description" content="Cabello, uñas, cejas, pestañas, depilación y spa en Dosquebradas.">
+<meta property="og:image" content="img/portada-cabello.jpg">
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="css/styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"Bel Art Belleza","image":"img/fachada.jpg","telephone":"+573147427236","email":"belartbelleza@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Calle 15 N° 16-41, Valher","addressLocality":"Dosquebradas","addressCountry":"CO"},"geo":{"@type":"GeoCoordinates","latitude":4.8233015,"longitude":-75.6827839},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"31"},"sameAs":["https://www.instagram.com/belart_belleza/","https://www.facebook.com/share/1HRfh69DrF/","https://www.tiktok.com/@belartbelleza"]}</script>
+</head>
+<body>
+<canvas class="galaxy" id="galaxy" aria-hidden="true"></canvas>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="galaxy-hint" id="galaxyHint" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="sp" viewBox="0 0 24 24"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z"/></symbol>
+<symbol id="ar" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
+<symbol id="tk" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></symbol>
+<symbol id="wa" viewBox="0 0 24 24"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path fill="currentColor" d="M9 8.5c0 3 3 6 6 6l1.2-1.5-2-1-.8.7c-1-.4-2-1.4-2.4-2.4l.7-.8-1-2z"/></symbol>
+<symbol id="fb" viewBox="0 0 24 24"><path fill="currentColor" d="M14 8.5V7c0-.8.5-1 1-1h2V3h-2.7C11.6 3 10.5 4.7 10.5 6.8V8.5H8v3h2.5V21h3.5v-9.5h2.4l.6-3z"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3.2 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+<symbol id="i-hair" viewBox="0 0 24 24"><path d="M7 3c-2 4-2 9 0 13 1 2 3 3 5 3M17 3c2 4 2 9 0 13-1 2-3 3-5 3M10 4c-1 4-1 8 0 12M14 4c1 4 1 8 0 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+<symbol id="i-nail" viewBox="0 0 24 24"><path d="M8 21v-7a4 4 0 0 1 8 0v7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M9 10V6c0-1.7 1.3-3 3-3s3 1.3 3 3v4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 6.5c.5-.7 1-1 1.8-1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" fill="none"/></symbol>
+<symbol id="i-brow" viewBox="0 0 24 24"><path d="M3 12c3-5 9-6 18-3-1 4-6 6-10 5-3-.5-6-1-8-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 6 12 6s9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="2.8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v1.8M6 5l1 1.5M18 5l-1 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+<symbol id="i-wax" viewBox="0 0 24 24"><path d="M12 3c3 4 5 6.5 5 9.5a5 5 0 0 1-10 0C7 9.5 9 7 12 3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 14a2.2 2.2 0 0 0 2.2 2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+<symbol id="i-spa" viewBox="0 0 24 24"><path d="M12 20c-4 0-8-3-8-8 4 0 7 2 8 5 1-3 4-5 8-5 0 5-4 8-8 8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 17c-1.5-3.5-1.5-7 0-11 1.5 4 1.5 7.5 0 11z" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+</defs></svg>
+
+<header id="hd"><div class="wrap nav">
+<a class="brand" href="#inicio" aria-label="Bel Art Belleza, inicio"><img class="logo" src="img/logo.jpg" alt="Logo de Bel Art Belleza" width="56" height="56"><span class="brand-t">Bel Art<small>Belleza</small></span></a>
+<nav id="nav" aria-label="Principal"><ul><li><a href="#inicio">Inicio</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#carta">Carta</a></li><li><a href="#arte">Trabajos</a></li><li><a href="#equipo">Equipo</a></li><li><a href="#resenas">Reseñas</a></li><li><a href="#visitanos">Visítanos</a></li><li class="mb"><a class="btn b1" target="_blank" rel="noopener" href="https://belart.site.agendapro.com/co/sucursal/18112">Reservar cita</a></li></ul></nav>
+<div class="nav-r"><a class="btn b1 sm hide-m" target="_blank" rel="noopener" href="https://belart.site.agendapro.com/co/sucursal/18112">Reservar cita</a><button class="burger" id="bg" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button></div>
+</div></header>
+
+<main>
+<section class="hero" id="inicio"><div class="wrap hero-in">
+<div class="hero-copy">
+<span class="eyebrow"><svg class="sp" aria-hidden="true"><use href="#sp"/></svg> Salón de belleza · Dosquebradas</span>
+<h1><em>Bel Art</em><br>Belleza</h1>
+<p class="tagline">Tu belleza, nuestra forma de arte.</p>
+<p class="hero-p">Cabello, uñas, cejas, pestañas, depilación y spa en un mismo lugar, con atención cercana y un ambiente pensado para que te sientas cómoda.</p>
+<div class="cta"><a class="btn b1" target="_blank" rel="noopener" href="https://belart.site.agendapro.com/co/sucursal/18112">Reservar cita <svg class="ic" aria-hidden="true"><use href="#ar"/></svg></a><a class="btn b2" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=573147427236&text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita"><svg class="ic" aria-hidden="true"><use href="#wa"/></svg> Consultar por WhatsApp</a></div>
+<ul class="tags"><li>Cabello</li><li>Uñas</li><li>Cejas</li><li>Pestañas</li><li>Depilación</li><li>Spa</li></ul>
+</div>
+<div class="hero-art" id="heroArt">
+<div class="ring" aria-hidden="true"></div><div class="ring r2" aria-hidden="true"></div>
+<div class="arch"><img src="img/portada-cabello.jpg" alt="Mujer de espaldas con el cabello largo, ondulado y con reflejos dorados en Bel Art Belleza" fetchpriority="high"></div>
+<div class="fl f1"><span class="fl-s">★ 4,8</span><span class="fl-t">en Google<br><small>31 reseñas</small></span></div>
+<div class="fl f2"><svg class="ic" aria-hidden="true"><use href="#pin"/></svg><span class="fl-t">Dosquebradas<br><small>Valher</small></span></div>
+<span class="spark s1" aria-hidden="true"><svg class="sp" aria-hidden="true"><use href="#sp"/></svg></span><span class="spark s2" aria-hidden="true"><svg class="sp" aria-hidden="true"><use href="#sp"/></svg></span><span class="spark s3" aria-hidden="true"><svg class="sp" aria-hidden="true"><use href="#sp"/></svg></span>
+</div>
+</div>
+<a class="scroll-ind" href="#nosotras" aria-label="Seguir bajando"><span></span></a>
+</section>
+
+<div class="mq" aria-hidden="true"><div class="mq-t"><span>Cabello</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg><span>Uñas</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg><span>Cejas</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg><span>Pestañas</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg><span>Depilación</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg><span>Spa y bienestar</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg><span>Color</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg><span>Maquillaje</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg><span>Cabello</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg><span>Uñas</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg><span>Cejas</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg><span>Pestañas</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg><span>Depilación</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg><span>Spa y bienestar</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg><span>Color</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg><span>Maquillaje</span><svg class="sp" aria-hidden="true"><use href="#sp"/></svg></div></div>
+
+<section class="alt" id="nosotras"><div class="wrap zz rv-in">
+<div class="zz-img"><img src="img/interior-espejos.jpg" alt="Zona de peinado de Bel Art Belleza con espejos iluminados y pared rosa" loading="lazy"><span class="badge-f"><svg class="sp" aria-hidden="true"><use href="#sp"/></svg> Un espacio luminoso y acogedor</span></div>
+<div><span class="eyebrow"><svg class="sp" aria-hidden="true"><use href="#sp"/></svg> Bienvenida</span><h2>Bienvenida a <em>Bel Art Belleza</em></h2>
+<p>Es un lugar para detenerte un momento y dejarte cuidar. En Bel Art encuentras servicios de cabello, uñas, cejas, pestañas, depilación y spa, en un espacio luminoso y acogedor.</p>
+<p>Nuestro equipo te escucha, te orienta y trabaja con dedicación para que salgas con un resultado que se sienta tuyo.</p>
+<div class="cta"><a class="btn b1 sm" target="_blank" rel="noopener" href="https://belart.site.agendapro.com/co/sucursal/18112">Reservar cita</a><a class="lk" href="#equipo">Conoce al equipo <svg class="ic" aria-hidden="true"><use href="#ar"/></svg></a></div></div>
+</div></section>
+
+<section id="servicios"><div class="wrap">
+<div class="head rv-in"><span class="eyebrow"><svg class="sp" aria-hidden="true"><use href="#sp"/></svg> Nuestros servicios</span><h2>Cuidado de la cabeza <em>a los pies</em></h2></div>
+<div class="svc-g">
+<article class="svc rv-in" style="--d:0.00s"><div class="svc-i"><img src="img/cabello-luces.jpg" alt="Cabello castaño con luces y reflejos dorados, liso y con corte recto" loading="lazy"><span class="svc-n">01</span></div><div class="svc-b"><h3>Coloración</h3><p>Color pensado para ti: aplicación de color base, color cepillado y balayage, desde matices naturales hasta cambios atrevidos.</p><div class="cta"><a class="btn b1 sm" target="_blank" rel="noopener" href="https://belart.site.agendapro.com/co/sucursal/18112">Reservar cita</a><a class="lk" href="#carta">Ver carta <svg class="ic" aria-hidden="true"><use href="#ar"/></svg></a></div></div></article>
+<article class="svc rv-in" style="--d:0.08s"><div class="svc-i"><img src="img/cepillado.jpg" alt="Cabello largo, liso y brillante tras un cepillado" loading="lazy"><span class="svc-n">02</span></div><div class="svc-b"><h3>Cepillados y peinados</h3><p>Cabello suave, ordenado y con movimiento. Cepillado o planchado, cepillado inteligente, corte cepillado y peinados para el día a día o una ocasión especial.</p><div class="cta"><a class="btn b1 sm" target="_blank" rel="noopener" href="https://belart.site.agendapro.com/co/sucursal/18112">Reservar cita</a><a class="lk" href="#carta">Ver carta <svg class="ic" aria-hidden="true"><use href="#ar"/></svg></a></div></div></article>
+<article class="svc rv-in" style="--d:0.16s"><div class="svc-i"><img src="img/unas-rosa.jpg" alt="Uñas decoradas con degradado, dorado y cristales" loading="lazy"><span class="svc-n">03</span></div><div class="svc-b"><h3>Uñas</h3><p>Manicure semipermanente, uñas en acrílico, gel y poligel, con decoración a tu estilo, además de manicura y pedicura.</p><div class="cta"><a class="btn b1 sm" target="_blank" rel="noopener" href="https://belart.site.agendapro.com/co/sucursal/18112">Reservar cita</a><a class="lk" href="#carta">Ver carta <svg class="ic" aria-hidden="true"><use href="#ar"/></svg></a></div></div></article>
+<article class="svc rv-in" style="--d:0.24s"><div class="svc-i"><img src="img/cejas-2.jpg" alt="Cejas definidas con un acabado natural, trabajadas en Bel Art Belleza" loading="lazy"><span class="svc-n">04</span></div><div class="svc-b"><h3>Cejas y pestañas</h3><p>Delineado, laminado, microblading y micropigmentación de cejas; pestañas 3D, pelo a pelo, lifting y extensiones para una mirada más definida.</p><div class="cta"><a class="btn b1 sm" target="_blank" rel="noopener" href="https://belart.site.agendapro.com/co/sucursal/18112">Reservar cita</a><a class="lk" href="#carta">Ver carta <svg class="ic" aria-hidden="true"><use href="#ar"/></svg></a></div></div></article>
+</div></div></section>
+
+<section class="alt" id="carta"><div class="wrap">
+<div class="head rv-in"><span class="eyebrow"><svg class="sp" aria-hidden="true"><use href="#sp"/></svg> Carta de servicios</span><h2>Todo lo que <em>podemos hacer por ti</em></h2></div>
+<div class="mg">
+<article class="card mn rv-in" style="--d:0.00s"><div class="mn-h"><span class="mn-ic"><svg class="ic" aria-hidden="true"><use href="#i-hair"/></svg></span><h3>Cabello</h3></div><ul class="mi"><li><span>Cortes de cabello</span></li><li><span>Peinados</span></li><li><span>Cepillado o planchado</span></li><li><span>Cepillado inteligente</span></li><li><span>Corte cepillado</span></li><li><span>Aplicación de color base</span></li><li><span>Color cepillado</span></li><li><span>Balayage</span></li><li><span>Permanente</span></li></ul></article>
+<article class="card mn rv-in" style="--d:0.08s"><div class="mn-h"><span class="mn-ic"><svg class="ic" aria-hidden="true"><use href="#i-nail"/></svg></span><h3>Uñas</h3></div><ul class="mi"><li><span>Manicure semipermanente<small class="nt">Incluye decoración de una uña por cada mano</small></span></li><li><span>Manicura</span></li><li><span>Pedicura</span></li><li><span>Uñas decoradas</span></li><li><span>Uñas de acrílico</span></li><li><span>Uñas en gel</span></li><li><span>Uñas en poligel</span></li></ul></article>
+<article class="card mn rv-in" style="--d:0.16s"><div class="mn-h"><span class="mn-ic"><svg class="ic" aria-hidden="true"><use href="#i-brow"/></svg></span><h3>Cejas</h3></div><ul class="mi"><li><span>Delineado de cejas</span></li><li><span>Embellecimiento de cejas</span></li><li><span>Laminado de cejas</span></li><li><span>Sombreado temporal</span></li><li><span>Microblading</span></li><li><span>Micropigmentación de cejas</span></li></ul></article>
+<article class="card mn rv-in" style="--d:0.00s"><div class="mn-h"><span class="mn-ic"><svg class="ic" aria-hidden="true"><use href="#i-eye"/></svg></span><h3>Pestañas</h3></div><ul class="mi"><li><span>Pestañas 3D</span></li><li><span>Pestañas pelo a pelo</span></li><li><span>Pestañas punto a punto</span></li><li><span>Extensiones de pestañas</span></li><li><span>Lifting de pestañas</span></li><li><span>Pigmentación de pestañas</span></li></ul></article>
+<article class="card mn rv-in" style="--d:0.08s"><div class="mn-h"><span class="mn-ic"><svg class="ic" aria-hidden="true"><use href="#i-wax"/></svg></span><h3>Depilación</h3></div><ul class="mi"><li><span>Depilación con cera</span></li><li><span>Depilación con hilo</span></li><li><span>Depilación de cejas con hilo</span></li><li><span>Depilación hindú</span></li><li><span>Depilación láser</span></li></ul></article>
+<article class="card mn rv-in" style="--d:0.16s"><div class="mn-h"><span class="mn-ic"><svg class="ic" aria-hidden="true"><use href="#i-spa"/></svg></span><h3>Spa y bienestar</h3></div><ul class="mi"><li><span>Limpieza facial</span></li><li><span>Despigmentación de manchas</span></li><li><span>Masajes relajantes</span></li><li><span>Masajes reductores</span></li><li><span>Masajes terapéuticos</span></li><li><span>Chocolaterapia</span></li><li><span>Maderoterapia</span></li><li><span>Maquillaje</span></li></ul></article>
+</div>
+<p class="mt">Confirma tu servicio al reservar.</p>
+<div class="mc"><a class="btn b1" target="_blank" rel="noopener" href="https://belart.site.agendapro.com/co/sucursal/18112">Reservar cita <svg class="ic" aria-hidden="true"><use href="#ar"/></svg></a></div></div></section>
+
+<section id="arte"><div class="wrap">
+<div class="head rv-in"><span class="eyebrow"><svg class="sp" aria-hidden="true"><use href="#sp"/></svg> Galería de belleza</span><h2>Nuestro <em>arte</em></h2>
+<p class="lead">Algunos de los trabajos realizados en Bel Art Belleza.</p></div>
+<div class="tabs" role="group" aria-label="Filtrar galería">
+<button type="button" aria-pressed="true" data-f="all">Todo</button><button type="button" aria-pressed="false" data-f="cabello">Cabello</button><button type="button" aria-pressed="false" data-f="cejas">Cejas y mirada</button><button type="button" aria-pressed="false" data-f="unas">Uñas</button></div>
+<div class="gal" id="gal">
+<figure data-c="cabello"><button type="button" class="gz" aria-label="Ampliar: Cabello castaño claro con capas y reflejos"><img src="img/cabello-castano.jpg" alt="Cabello castaño claro con capas y reflejos" loading="lazy"><figcaption>Cabello</figcaption></button></figure>
+<figure data-c="cejas"><button type="button" class="gz" aria-label="Ampliar: Cejas diseñadas y definidas"><img src="img/cejas-1.jpg" alt="Cejas diseñadas y definidas" loading="lazy"><figcaption>Cejas</figcaption></button></figure>
+<figure data-c="cabello"><button type="button" class="gz" aria-label="Ampliar: Cabello con mechas cobrizas y naranja"><img src="img/coloracion.jpg" alt="Cabello con mechas cobrizas y naranja" loading="lazy"><figcaption>Cabello</figcaption></button></figure>
+<figure data-c="cabello"><button type="button" class="gz" aria-label="Ampliar: Cabello negro, largo y liso"><img src="img/cabello-negro.jpg" alt="Cabello negro, largo y liso" loading="lazy"><figcaption>Cabello</figcaption></button></figure>
+<figure data-c="unas"><button type="button" class="gz" aria-label="Ampliar: Uñas con detalles dorados y flores blancas"><img src="img/unas-dorado.jpg" alt="Uñas con detalles dorados y flores blancas" loading="lazy"><figcaption>Uñas</figcaption></button></figure>
+<figure data-c="cejas"><button type="button" class="gz" aria-label="Ampliar: Cejas y pestañas definidas"><img src="img/cejas-pestanas.jpg" alt="Cejas y pestañas definidas" loading="lazy"><figcaption>Cejas</figcaption></button></figure>
+<figure data-c="cejas"><button type="button" class="gz" aria-label="Ampliar: Cejas con diseño en tono café"><img src="img/cejas-3.jpg" alt="Cejas con diseño en tono café" loading="lazy"><figcaption>Cejas</figcaption></button></figure>
+</div></div></section>
+
+<section class="alt" id="equipo"><div class="wrap zz rv-in rev">
+<div class="zz-img"><img src="img/equipo.jpg" alt="El equipo de Bel Art Belleza reunido en el salón" loading="lazy"></div>
+<div><span class="eyebrow"><svg class="sp" aria-hidden="true"><use href="#sp"/></svg> Nuestro equipo</span><h2>Detrás de cada detalle, <em>un gran equipo.</em></h2>
+<p>En Bel Art Belleza creemos que una buena experiencia se construye con cercanía. Nuestro equipo te recibe con atención, escucha lo que buscas y trabaja con dedicación para que te sientas cómoda y cuidada en cada visita.</p>
+<ul class="stats"><li><b>4,8</b><span>calificación en Google</span></li><li><b>40+</b><span>servicios en nuestra carta</span></li><li><b>6</b><span>áreas de belleza</span></li></ul></div>
+</div></section>
+
+<section id="resenas"><div class="wrap">
+<div class="head c rv-in"><span class="eyebrow"><svg class="sp" aria-hidden="true"><use href="#sp"/></svg> Experiencias</span><h2>Lo que dicen de <em>Bel Art</em></h2></div>
+<div class="rbar rv-in"><div class="rl"><b>4,8</b><span class="st" aria-hidden="true">★★★★★</span><span class="rn">calificación general · 31 reseñas en Google</span></div><a class="btn b1 sm" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Bel+art+Belleza+salon+de+belleza/@4.82301,-75.6836019,328m/data=!3m1!1e3!4m6!3m5!1s0x8e38816315dcaffb:0xb8147fcd034e2653!8m2!3d4.8233015!4d-75.6827839!16s%2Fg%2F11h3btqkbz?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D">Escribir una reseña en Google</a></div>
+<div class="rw" id="rw" hidden><button class="ra" id="pv" type="button" aria-label="Reseñas anteriores">←</button><div class="sc" id="sc" tabindex="0" aria-label="Reseñas de Google"></div><button class="ra" id="nx" type="button" aria-label="Reseñas siguientes">→</button></div>
+<p class="rnote" id="rnote">Las opiniones de nuestras clientas están en Google, siempre actualizadas.</p>
+<div class="mc"><a class="btn b3" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Bel+art+Belleza+salon+de+belleza/@4.82301,-75.6836019,328m/data=!3m1!1e3!4m6!3m5!1s0x8e38816315dcaffb:0xb8147fcd034e2653!8m2!3d4.8233015!4d-75.6827839!16s%2Fg%2F11h3btqkbz?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D">Ver todas las reseñas en Google</a></div>
+</div></section>
+
+<section class="alt vis" id="visitanos"><div class="wrap">
+<div class="head rv-in"><span class="eyebrow"><svg class="sp" aria-hidden="true"><use href="#sp"/></svg> Ubicación</span><h2>Visítanos</h2>
+<p class="lead">Descubre nuestro espacio y ven a disfrutar de una experiencia de belleza y cuidado personal.</p></div>
+<div class="vis-g">
+<div class="vis-l rv-in"><img class="fac" src="img/fachada.jpg" alt="Fachada de Bel Art Belleza, con los avisos del salón en la entrada" loading="lazy">
+<ul class="info">
+<li class="card"><svg class="ic" aria-hidden="true"><use href="#pin"/></svg><div><h4>Dirección</h4><p>Calle 15 N° 16-41, Valher, Dosquebradas</p></div></li>
+<li class="card"><svg class="ic" aria-hidden="true"><use href="#wa"/></svg><div><h4>WhatsApp</h4><p><a target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=573147427236&text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita">314 742 7236</a></p></div></li>
+<li class="card"><svg class="ic" aria-hidden="true"><use href="#mail"/></svg><div><h4>Correo</h4><p><a href="mailto:belartbelleza@gmail.com">belartbelleza@gmail.com</a></p></div></li>
+<li class="card"><svg class="ic" aria-hidden="true"><use href="#clock"/></svg><div><h4>Horarios</h4><p><a target="_blank" rel="noopener" href="https://www.google.com/maps/place/Bel+art+Belleza+salon+de+belleza/@4.82301,-75.6836019,328m/data=!3m1!1e3!4m6!3m5!1s0x8e38816315dcaffb:0xb8147fcd034e2653!8m2!3d4.8233015!4d-75.6827839!16s%2Fg%2F11h3btqkbz?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D">Ver en Google Maps</a></p></div></li>
+</ul></div>
+<div class="vis-r rv-in"><div class="map"><iframe title="Mapa: Bel Art Belleza" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=4.8233015,-75.6827839&amp;z=17&amp;hl=es&amp;output=embed"></iframe></div>
+<div class="cta"><a class="btn b2" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Bel+art+Belleza+salon+de+belleza/@4.82301,-75.6836019,328m/data=!3m1!1e3!4m6!3m5!1s0x8e38816315dcaffb:0xb8147fcd034e2653!8m2!3d4.8233015!4d-75.6827839!16s%2Fg%2F11h3btqkbz?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D">Cómo llegar <svg class="ic" aria-hidden="true"><use href="#ar"/></svg></a><a class="btn b1" target="_blank" rel="noopener" href="https://belart.site.agendapro.com/co/sucursal/18112">Agendar en línea</a></div></div>
+</div></div></section>
+
+<section id="redes" class="sm"><div class="wrap c">
+<div class="head c rv-in"><span class="eyebrow"><svg class="sp" aria-hidden="true"><use href="#sp"/></svg> Síguenos</span><h2>Nuestro arte, <em>también en redes</em></h2><p class="lead">Mira nuevos trabajos y novedades, y escríbenos cuando quieras.</p></div>
+<div class="so rv-in"><a class="btn b3" target="_blank" rel="noopener" href="https://www.instagram.com/belart_belleza/"><svg class="ic" aria-hidden="true"><use href="#ig"/></svg> Instagram</a><a class="btn b3" target="_blank" rel="noopener" href="https://www.facebook.com/share/1HRfh69DrF/"><svg class="ic" aria-hidden="true"><use href="#fb"/></svg> Facebook</a><a class="btn b3" target="_blank" rel="noopener" href="https://www.tiktok.com/@belartbelleza"><svg class="ic" aria-hidden="true"><use href="#tk"/></svg> TikTok</a><a class="btn b2" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=573147427236&text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita"><svg class="ic" aria-hidden="true"><use href="#wa"/></svg> WhatsApp</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><div class="fg">
+<div><a class="brand" href="#inicio"><img class="logo" src="img/logo.jpg" alt="Logo de Bel Art Belleza" width="52" height="52"><span class="brand-t">Bel Art<small>Belleza</small></span></a><p>Tu belleza, nuestra forma de arte.</p>
+<div class="ico"><a target="_blank" rel="noopener" href="https://www.instagram.com/belart_belleza/" aria-label="Instagram"><svg class="ic" aria-hidden="true"><use href="#ig"/></svg></a><a target="_blank" rel="noopener" href="https://www.tiktok.com/@belartbelleza" aria-label="TikTok"><svg class="ic" aria-hidden="true"><use href="#tk"/></svg></a><a target="_blank" rel="noopener" href="https://www.facebook.com/share/1HRfh69DrF/" aria-label="Facebook"><svg class="ic" aria-hidden="true"><use href="#fb"/></svg></a><a target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=573147427236&text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita" aria-label="WhatsApp"><svg class="ic" aria-hidden="true"><use href="#wa"/></svg></a></div></div>
+<div><h4>Explorar</h4><ul><li><a href="#servicios">Servicios</a></li><li><a href="#carta">Carta de servicios</a></li><li><a href="#arte">Nuestros trabajos</a></li><li><a href="#equipo">Nuestro equipo</a></li><li><a href="#resenas">Reseñas</a></li></ul></div>
+<div><h4>Encuéntranos</h4><ul><li><a href="https://belart.site.agendapro.com/co/sucursal/18112" target="_blank" rel="noopener">Agendar en línea</a></li><li><a href="https://api.whatsapp.com/send?phone=573147427236&text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita" target="_blank" rel="noopener">WhatsApp 314 742 7236</a></li><li>Calle 15 N° 16-41, Valher, Dosquebradas</li><li><a href="mailto:belartbelleza@gmail.com">belartbelleza@gmail.com</a></li><li><a href="#visitanos">Visítanos</a></li></ul></div>
+</div><div class="cp"><span>© 2026 Bel Art Belleza</span><span class="lg"><a href="#privacidad">Política de privacidad</a> · <a href="#terminos">Términos y condiciones</a></span></div></div></footer>
+
+<div class="lp" id="privacidad" role="dialog" aria-modal="true" aria-labelledby="privacidadt" hidden><div class="wrap"><button class="btn b3 sm" type="button">← Volver al sitio</button><h2 id="privacidadt" style="margin-top:34px">Política de privacidad</h2><div class="lbody"><p>Contenido legal pendiente.</p></div></div></div>
+<div class="lp" id="terminos" role="dialog" aria-modal="true" aria-labelledby="terminost" hidden><div class="wrap"><button class="btn b3 sm" type="button">← Volver al sitio</button><h2 id="terminost" style="margin-top:34px">Términos y condiciones</h2><div class="lbody"><p>Contenido legal pendiente.</p></div></div></div>
+
+<div class="lbx" id="lbx" role="dialog" aria-modal="true" aria-label="Ampliar imagen" hidden>
+<button class="lbx-x" type="button" aria-label="Cerrar">✕</button><button class="lbx-p" type="button" aria-label="Anterior">←</button>
+<figure><img id="lbxImg" src="" alt=""><figcaption id="lbxCap"></figcaption></figure>
+<button class="lbx-n" type="button" aria-label="Siguiente">→</button></div>
+
+<a class="fab" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=573147427236&text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita" aria-label="Escríbenos por WhatsApp"><svg class="ic" aria-hidden="true"><use href="#wa"/></svg><span>WhatsApp</span></a>
+<script src="js/main.js"></script>
+</body>
+</html>
